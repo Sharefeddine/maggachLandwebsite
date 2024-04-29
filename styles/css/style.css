@@ -1,0 +1,145 @@
+﻿/* start ContactUS*/
+.contactUs {display: flex;}
+.contactUs .box {
+    flex: 1;
+    padding: 20px;
+}
+
+/* start map */
+.map-container {
+    width: 100%;
+    height: 400px;
+}
+.container {
+width: 80%;
+max-width: 600px;
+margin: 50px auto;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 8px;
+}
+.form-group {
+margin-bottom: 20px;
+}
+label {
+display: block;
+margin-bottom: 5px;
+}
+input, textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+}
+input[type="submit"] {
+background-color:  #0073cf;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+input[type="submit"]:hover {
+background-color: #45a049;
+}
+/* end map */
+/* end contactUs*/
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack child elements vertically on smaller screens */
+    }
+}
+/* start footer */
+.footer {
+background-color: #333;
+color: #fff;
+padding: 20px 0;
+text-align: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.footer div {
+flex: 1;
+min-width: 200px;
+margin: 0 10px;
+text-align: left;
+}
+.footer .pages ul {
+list-style: none;
+padding: 0;
+}
+.footer .hours ul {
+list-style: none;
+padding: 0;
+}
+footer ul{
+    list-style: none;
+}
+.footer h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+.social-media .list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media .list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+footer p{
+    color : #ffffff;
+}
+.copyRight {
+    text-align: center;
+}
+/* end footer */
